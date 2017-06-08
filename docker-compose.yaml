@@ -1,0 +1,8 @@
+version: "2"
+services:
+  postgres:
+    image: larrytalley/postgres-prod-ready
+    volumes:
+      - /var/lib/docker/volumes/pg_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
